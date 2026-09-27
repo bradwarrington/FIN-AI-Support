@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Keep this page out of search engines while it's a pilot -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>ThoughtFarmer Support Chat</title>
+  <meta name="description" content="Chat with ThoughtFarmer's AI support assistant, 24/7.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23107a6e'/%3E%3Cpath d='M9 11h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-8l-5 4v-4H9a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2z' fill='white'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f6f8f7;
+      --surface: #ffffff;
+      --text: #1b2421;
+      --muted: #5a6763;
+      --border: #dde4e1;
+      --accent: #107a6e;
+      --accent-hover: #0c6258;
+      --accent-soft: #e3f2ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111615;
+        --surface: #1a2120;
+        --text: #e8eeec;
+        --muted: #9aa8a4;
+        --border: #2b3533;
+        --accent: #3bb3a3;
+        --accent-hover: #55c4b5;
+        --accent-soft: #1d302d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 16px 120px;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.15;
+      margin: 16px 0 12px;
+    }
+    .lede { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font: inherit;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 22px;
+      cursor: pointer;
+    }
+    .btn:hover { background: var(--accent-hover); }
+    .btn:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+    @media (prefers-color-scheme: dark) { .btn { color: #0b1110; } }
+    .note { font-size: 14px; color: var(--muted); margin-top: 12px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-top: 36px;
+    }
+    .card h2 { font-size: 18px; margin: 0 0 10px; }
+    .card ul, .card ol { margin: 0; padding-left: 20px; }
+    .card li { margin: 6px 0; }
+    a { color: var(--accent); }
+    a.btn { color: #fff; text-decoration: none; }
+    @media (prefers-color-scheme: dark) { a.btn { color: #0b1110; } }
+    footer { margin-top: 36px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="eyebrow">Chatbot Testing Instance</span>
+    <h1>Chat with ThoughtFarmer Support</h1>
+    <p class="lede">Ask our AI support assistant how-to questions or troubleshoot an issue with your intranet. If it can't solve it, it'll pass your conversation to one of ThoughtFarmer's Technical Support Analysts.</p>
+
+    <button class="btn" type="button" onclick="openChat()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" fill="currentColor"/></svg>
+      Start a chat
+    </button>
+    <p class="note">Click this button or the chat icon in the bottom-right corner to talk to Fin.<br>Tip: bookmark this page so you can get back to it any time.</p>
+
+    <section class="card">
+      <h2>How to test</h2>
+      <ol>
+        <li><strong>Ask real questions.</strong> Use things customers actually ask, like how-to questions, login or access problems, email notifications, or forms.</li>
+        <li><strong>Try one topic per chat.</strong> Start a new conversation for each scenario so it's easier to review afterwards.</li>
+        <li><strong>Push back.</strong> Say the answer didn't work, give vague details, or change your mind. See whether Fin asks sensible follow-up questions and offers an Analyst when it's stuck.</li>
+        <li><strong>Check the answer.</strong> Is it correct for ThoughtFarmer? Does it link the right Help Center article? Does it assume your setup (hosting, sign-in, groups) without asking?</li>
+        <li><strong>Test the handoff with care.</strong> Asking for a person creates a <em>real</em> Zendesk ticket. Start that message with <strong>TEST</strong> so Support knows to close it.</li>
+        <li><strong>Keep it safe.</strong> Don't enter passwords, customer data, or anything confidential.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Prefer to read?</h2>
+      <p style="margin:0">Browse step-by-step guides in the <a href="https://thoughtfarmer.zendesk.com/hc" target="_blank" rel="noopener">ThoughtFarmer Help Center</a>.</p>
+    </section>
+
+    <footer>ThoughtFarmer Support</footer>
+  </main>
+
+  <!-- Intercom Messenger (Fin) — workspace app id zpd7nqxr -->
+  <script>
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "zpd7nqxr",
+      messenger_environment: "9skd2bfrgh"
+    };
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zpd7nqxr';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+
+    function openChat() { window.Intercom('showNewMessage'); }
+  </script>
+
+</body>
+</html>
